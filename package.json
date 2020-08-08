@@ -1,0 +1,113 @@
+{
+  "name": "@skyra/timestamp",
+  "version": "0.0.1",
+  "description": "Parses and generates formatted times.",
+  "author": "@skyra",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://kyranet.github.io/timestamp",
+  "private": false,
+  "files": ["dist"],
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "lint": "eslint src tests --ext ts --fix",
+    "format": "prettier --write {src,tests}/**/*.ts",
+    "format:check": "prettier --check {src,tests}/**/*.ts",
+    "docs": "typedoc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "update": "yarn upgrade-interactive --latest",
+    "build": "rollup -c rollup.config.ts",
+    "watch": "yarn build -w",
+    "sversion": "standard-version",
+    "commit": "git-cz",
+    "cz": "git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@skyra/eslint-config": "^5.2.1",
+    "@types/jest": "^26.0.6",
+    "@types/node": "^14.0.24",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "jest-circus": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "rollup": "^2.23.0",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "standard-version": "^8.0.2",
+    "ts-jest": "^26.1.3",
+    "ts-node": "^8.10.2",
+    "typedoc": "^0.17.8",
+    "typescript": "^3.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyranet/timestamp.git"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6"
+  },
+  "keywords": [
+    "timestamp",
+    "duration",
+    "time",
+    "formatter",
+    "browser",
+    "nodejs",
+    "node.js",
+    "cjs",
+    "commonjs",
+    "esm",
+    "umd"
+  ],
+  "bugs": {
+    "url": "https://github.com/skyra-project/timestamp/issues"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix --ext ts"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "resolutions": {
+    "acorn": "^7.3.1",
+    "minimist": "^1.2.2",
+    "kind-of": "^6.0.3",
+    "jest-environment-jsdom": "https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.0.2.tgz",
+    "jest-jasmine2": "https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.0.2.tgz"
+  }
+}

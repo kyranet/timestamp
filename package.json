@@ -1,6 +1,6 @@
 {
   "name": "@skyra/timestamp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Parses and generates formatted times.",
   "author": "@skyra",
   "license": "MIT",
@@ -11,7 +11,9 @@
   "types": "dist/index.d.ts",
   "homepage": "https://kyranet.github.io/timestamp",
   "private": false,
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "yarn build",
     "lint": "eslint src tests --ext ts --fix",

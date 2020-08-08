@@ -2,7 +2,7 @@
   "name": "@skyra/timestamp",
   "version": "0.0.1",
   "description": "Parses and generates formatted times.",
-  "author": "kyranet",
+  "author": "@skyra",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -76,7 +76,7 @@
     "umd"
   ],
   "bugs": {
-    "url": "https://github.com/skyra-project/char/issues"
+    "url": "https://github.com/skyra-project/timestamp/issues"
   },
   "husky": {
     "hooks": {

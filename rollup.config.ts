@@ -21,7 +21,7 @@ export default {
 		{
 			file: './dist/index.umd.js',
 			format: 'umd',
-			name: 'SkyraChar',
+			name: 'SkyraTimestamp',
 			sourcemap: true
 		}
 	],

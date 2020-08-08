@@ -1,5 +1,5 @@
 {
-  "projectName": "char",
+  "projectName": "timestamp",
   "projectOwner": "skyra-project",
   "repoType": "github",
   "repoHost": "https://github.com",
@@ -20,36 +20,6 @@
         "test",
         "ideas",
         "infra"
-      ]
-    },
-    {
-      "login": "Favna",
-      "name": "Jeroen Claassens",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/4019718?v=4",
-      "profile": "https://favware.tech/",
-      "contributions": [
-        "infra",
-        "test",
-        "doc",
-        "platform"
-      ]
-    },
-    {
-      "login": "QuantumlyTangled",
-      "name": "Nejc Drobnic",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/7919610?v=4",
-      "profile": "https://quantumlytangled.com/",
-      "contributions": [
-        "test"
-      ]
-    },
-    {
-      "login": "vladfrangu",
-      "name": "Vlad Frangu",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/17960496?v=4",
-      "profile": "https://github.com/vladfrangu",
-      "contributions": [
-        "code"
       ]
     }
   ],
